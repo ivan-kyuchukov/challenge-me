@@ -2,10 +2,14 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
-// import { AppRoutingModule } from "./app-routing.module";
+import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { ChallengeEditComponent } from './challenges/challenge-edit/challenge-edit.component';
 import { CurrentChallengeComponent } from './challenges/current-challenge/current-challenge.component';
+import { AuthComponent } from './auth/auth.component';
+import { TodayComponent } from './challenges/today/today.component';
+import { ActionBarComponent } from './shared/ui/action-bar/action-bar.component';
+import { ChallengeTabsComponent } from './challenges/challenge-tabs/challenge-tabs.component';
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
 // import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -20,12 +24,16 @@ import { CurrentChallengeComponent } from './challenges/current-challenge/curren
     imports: [
         NativeScriptModule,
         NativeScriptFormsModule,
-        // AppRoutingModule
+        AppRoutingModule
     ],
     declarations: [
         AppComponent,
         ChallengeEditComponent,
-        CurrentChallengeComponent
+        CurrentChallengeComponent,
+        AuthComponent,
+        TodayComponent,
+        ActionBarComponent,
+        ChallengeTabsComponent
     ],
     providers: [],
     schemas: [

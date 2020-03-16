@@ -1,4 +1,4 @@
-<ListView [items]="challenges" (itemTap)="onItemTap($event)" iosEstimatedRowHeight="75">
+<!-- <ListView [items]="challenges" (itemTap)="onItemTap($event)" iosEstimatedRowHeight="75">
     <ng-template let-challenge="item" let-index="index">
         <GridLayout rows="40,60" columns="50,*">
             <Label [text]="index" row="0" col="0" rowSpan="2"></Label>
@@ -6,4 +6,9 @@
             <Label text="Item content row 2" row="1" col="1"></Label>
         </GridLayout>
     </ng-template>
-</ListView>
+</ListView> -->
+<ns-action-bar title="Current challenge"></ns-action-bar>
+<StackLayout>
+    <Label class="title" text="Current challenge" horizontalAlignment="center"></Label>
+    <Button class="title" text="Edit" horizontalAlignment="center" nsRouterLink="/edit-challenge" pageTransition="slideLeft"></Button>
+</StackLayout>

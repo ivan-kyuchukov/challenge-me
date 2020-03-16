@@ -35,3 +35,11 @@ The following CSS rule changes the font size of all Buttons that have the
 .form-control {
     border-bottom-color: purple;
 }
+
+.title {
+    font-size: 26;
+    text-align: center;
+    color: purple;
+    font-weight: bold;
+    margin-top: 10;
+}

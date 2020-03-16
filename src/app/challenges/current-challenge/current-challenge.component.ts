@@ -1,5 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { ItemEventData } from 'tns-core-modules/ui/list-view';
+import { ActionBarComponent } from '../../shared/ui/action-bar/action-bar.component';
+
 
 @Component({
   selector: 'ns-current-challenge',
@@ -8,9 +10,9 @@ import { ItemEventData } from 'tns-core-modules/ui/list-view';
   moduleId: module.id
 })
 export class CurrentChallengeComponent {
-    @Input() challenges: string[] = [];
+    // @Input() challenges: string[] = [];
 
-    onItemTap(args: ItemEventData) {
-        console.log(args);
-    }
+    // onItemTap(args: ItemEventData) {
+    //     console.log(args);
+    // }
 }
